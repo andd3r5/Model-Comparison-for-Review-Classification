@@ -10,7 +10,11 @@ time consuming Support Vector Classifier but also the very efficient Multinomial
 Bayes.
 
 ### Results
+![](/images/Comparison_of_training_times.png)
+![](/images/Comparison_of_test_accuracy.png)
 
+### Data
+![](/images/Distribution_of_user_reviews.png)
 
 ### Requirements
 - Python 3.6+
