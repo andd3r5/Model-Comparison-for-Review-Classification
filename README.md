@@ -10,10 +10,20 @@ time consuming Support Vector Classifier but also the very efficient Multinomial
 Bayes.
 
 ### Results
-![](/images/Comparison_of_training_times.png)
 ![](/images/Comparison_of_test_accuracy.png)
 
+As visible above I was able to reach an accuracy of 84% with the Support Vector Classifier.
+The RoBERTa Transformer outperformed it on the lower observation numbers but wasn't able to be trained on higher ones due to resource restrictions.
+
+![](/images/Comparison_of_training_times.png)
+
+Above displayed are the training times which show how much longer the transformer needs to train compared to the other models.
+
 ### Data
+The selected dataset for the project consists of reviews of fine foods from amazon. The
+reviews were written between October 1999 and Oct 2012. There are 568,454 reviews in
+total by 256,059 users on 74,258 products. It was collected in J. McAuley and J. Leskovec. From amateurs to connoisseurs: modeling the evolution of user= expertise through online reviews. 2013. url: http://i.stanford.edu/~julian/pdfs/www13.pdf and has the following distribution.
+
 ![](/images/Distribution_of_user_reviews.png)
 
 ### Requirements
