@@ -28,7 +28,7 @@ The models used in this comparison are:
 - Support Vector Machines
 - RoBERTa
 
-The model hyperparameter were optimized with CVGridSearch(), which gave the folloging result.
+The model hyperparameter were optimized with GridSearchCV(), which gave the following result.
 
 | Preprocessor | Tf-idf Transformer | Model |
 |----------|:-------------:|------:|
