@@ -19,6 +19,26 @@ The RoBERTa Transformer outperformed it on the lower observation numbers but was
 
 Above displayed are the training times which show how much longer the transformer needs to train compared to the other models.
 
+### Models
+
+The models used in this comparison are:
+
+- Multinomial Naive Bayes
+- Bernoulli Naive Bayes
+- Support Vector Machines
+- RoBERTa
+
+The model hyperparameter were optimized with CVGridSearch(), which gave the folloging result.
+
+| Preprocessor | Tf-idf Transformer | Model |
+|----------|:-------------:|------:|
+| CountVectorizer(binary=True,ngram\_range=(2,2)) |  | MultinomialNB(alpha=1)|
+| CountVectorizer(ngram\_range= (1, 2)) | TfidfTransformer(use\_idf=False) | MultinomialNB(alpha=0.1) |
+| CountVectorizer(ngram\_range=(1, 2), binary=True) | | BernoulliNB() |
+| CountVectorizer(ngram\_range= (1, 2), binary=True) | TfidfTransformer(use\_idf=True) | svm.LinearSVC() |
+
+RoBERTa was run on default hyperparameters due to limited computational resources.
+
 ### Data
 The selected dataset for the project consists of reviews of fine foods from amazon. The
 reviews were written between October 1999 and Oct 2012. There are 568,454 reviews in
